@@ -219,6 +219,8 @@ version = "0.1.0"
 dependencies = [
  "arduino-hal",
  "embedded-hal 1.0.0",
+ "hd44780-driver",
+ "itoa",
  "nb 1.1.0",
  "panic-halt",
  "ufmt",
@@ -274,6 +276,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7382cf6263419f2d8df38c55d7da83da5c18aef87fc7a7fc1fb1e344edfe14c1"
 dependencies = [
  "hashbrown 0.15.5",
+]
+
+[[package]]
+name = "hd44780-driver"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aab2b13fdeaed7dde9133a57c28b2cbde4a8fc8c3196b5631428aad114857d3a"
+dependencies = [
+ "embedded-hal 0.2.7",
 ]
 
 [[package]]
@@ -402,6 +413,12 @@ checksum = "2b192c782037fadd9cfa75548310488aabdbf3d2da73885b31bd0abd03351285"
 dependencies = [
  "either",
 ]
+
+[[package]]
+name = "itoa"
+version = "1.0.18"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
 
 [[package]]
 name = "litemap"
