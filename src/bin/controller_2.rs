@@ -3,6 +3,9 @@
 #![no_main]
 #![allow(unused)]
 
+use flight_emulator_project::gauges;
+use crate::gauges::{yaw, roll};
+
 use panic_halt as _;
 use arduino_hal::{
     port::{mode::Output, Pin, PinOps},
@@ -150,7 +153,7 @@ fn main() -> ! {
     lcd.reset(&mut delay);
     lcd.clear(&mut delay);
     lcd.set_cursor_visibility(Cursor::Invisible, &mut delay);
-    lcd.write_str("Flashing 1", &mut delay);
+    lcd.write_str("Contoller 2", &mut delay);
 
     loop {
         arduino_hal::delay_ms(1000);

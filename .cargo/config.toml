@@ -3,11 +3,11 @@ target = "avr-none"
 rustflags = ["-C", "target-cpu=atmega328p"]
 
 [target.'cfg(target_arch = "avr")']
-runner = "ravedude -P /dev/ttyUSB0"
+runner = "ravedude"
 
 [unstable]
 build-std = ["core"]
 
 
-[target.avr-unknown-gnu-atmega328p]
-runner = "ravedude uno -P /dev/ttyUSB0"
+# [target.avr-unknown-gnu-atmega328p]
+# runner = "ravedude uno -P /dev/ttyUSB1"

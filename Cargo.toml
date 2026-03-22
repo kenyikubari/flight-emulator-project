@@ -5,8 +5,26 @@ authors = ["kenyi"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
 
+[lib]
+name = "flight_emulator_project"
+path = "src/lib.rs"
+test = false
+bench = false
+
 [[bin]]
 name = "flight-emulator-project"
+test = false
+bench = false
+
+[[bin]]
+name = "controller-1"
+path = "src/bin/controller_1.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "controller-2"
+path = "src/bin/controller_2.rs"
 test = false
 bench = false
 

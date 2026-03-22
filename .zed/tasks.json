@@ -1,0 +1,26 @@
+[
+  {
+    "label": "flash controller 1",
+    "shell": {
+      "with_arguments": {
+        "program": "wsl.exe",
+        "args": ["-e", "bash", "-c", "RAVEDUDE_PORT=/dev/ttyUSB0 cargo run --bin controller-1"]
+      }
+    },
+    "command": "true",
+    "use_new_terminal": true,
+    "reveal": "always"
+  },
+  {
+    "label": "flash controller 2",
+    "shell": {
+      "with_arguments": {
+        "program": "wsl.exe",
+        "args": ["-e", "bash", "-c", "RAVEDUDE_PORT=/dev/ttyUSB1 cargo run --bin controller-2"]
+      }
+    },
+    "command": "true",
+    "use_new_terminal": true,
+    "reveal": "always"
+  }
+]
