@@ -1,0 +1,13 @@
+[cargo]
+target = "avr-unknown-gnu-atmega328"
+buildScripts.enable = false
+noDefaultFeatures = false
+
+# [procMacro]
+# enable = false
+
+[checkOnSave]
+enable = false
+
+[diagnostics]
+enable = true

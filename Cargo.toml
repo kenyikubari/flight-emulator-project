@@ -13,6 +13,7 @@ bench = false
 
 [[bin]]
 name = "flight-emulator-project"
+path = "src/main.rs"
 test = false
 bench = false
 
@@ -41,7 +42,6 @@ git = "https://github.com/rahix/avr-hal"
 rev = "e5c8f37fe48419956e722490a82b9ca9b9fc61a2"
 features = ["arduino-uno"]
 
-# Configure the build for minimal size - AVRs have very little program memory
 [profile.dev]
 panic = "abort"
 lto = true

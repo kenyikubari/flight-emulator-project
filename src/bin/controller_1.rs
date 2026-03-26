@@ -83,16 +83,16 @@ fn main() -> ! {
     let dp    = arduino_hal::Peripherals::take().unwrap();
     let pins  = arduino_hal::pins!(dp);
 
-    // let timer1_pwm = Timer1Pwm::new(dp.TC1, Prescaler::Prescale64);  
+    // let timer1_pwm = Timer1Pwm::new(dp.TC1, Prescaler::Prescale64);
     // let timer2_pwm = Timer2Pwm::new(dp.TC2, Prescaler::Prescale64);
-   
+
     // let mut pwm_2 = pins.d11.into_output().into_pwm(&timer2_pwm);
     // pwm_2.enable();
 
- 
+
     // let mut pwm_1 = pins.d10.into_output().into_pwm(&timer1_pwm);
     // pwm_1.enable();
-    
+
     // let mut motor_1 = Motor::new(
     //     pins.d13.into_output(),
     //     pins.d12.into_output(),
@@ -114,7 +114,7 @@ fn main() -> ! {
     // let d5 = pins.d3.into_output();
     // let d6 = pins.d2.into_output();
     // let d7 = pins.d0.into_output();
-    
+
     // LCD pins (match Arduino wiring)
     let rs = pins.d6.into_output();
     let en = pins.d5.into_output();
