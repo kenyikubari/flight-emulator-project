@@ -1,0 +1,2 @@
+[tool.ty.rules]
+python = "/home/kenyi/miniconda3/bin/python"

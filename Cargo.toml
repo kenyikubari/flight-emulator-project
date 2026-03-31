@@ -11,11 +11,11 @@ path = "src/lib.rs"
 test = false
 bench = false
 
-[[bin]]
-name = "flight-emulator-project"
-path = "src/main.rs"
-test = false
-bench = false
+# [[bin]]
+# name = "flight-emulator-project"
+# path = "src/main.rs"
+# test = false
+# bench = false
 
 [[bin]]
 name = "controller-1"

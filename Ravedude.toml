@@ -1,9 +1,7 @@
 [general]
 board = "uno"
-# After flashing, open the serial console at 57600 baud.
-open-console = true
+open-console = false
 serial-baudrate = 57600
-serial-port = "/dev/ttyUSB1"
+serial-port-01 = "/dev/ttyUSB1"
+serial-port-02 = "/dev/ttyUSB0"
 
-# For documentation about this file, check here:
-# https://github.com/Rahix/avr-hal/blob/main/ravedude/README.md#ravedudetoml-format
