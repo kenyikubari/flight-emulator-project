@@ -129,7 +129,7 @@ def main() -> None:
         # Loop through dataset and stream each row
         for row in df.iter_rows(named=True):
             stream_row(ser1, ser2, row)
-            time.sleep(5)
+            time.sleep(1)
 
     finally:
         ser1.close()

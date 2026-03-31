@@ -7,3 +7,4 @@ $env.RAVEDUDE_PORT = "/dev/ttyUSB0"
 cargo run --bin controller-2
 
 python app/main.py
+streamlit run app/dashboard/app.py
