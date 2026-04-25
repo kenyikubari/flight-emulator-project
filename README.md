@@ -6,7 +6,7 @@ A real-time flight instrumentation system that integrates motorized analog gauge
 
 This project recreates a simplified aircraft instrument cluster using Arduino-based embedded systems, DC motor-driven gauges, LCD displays, and a Python-based dashboard. The objective is to combine mechanical systems, embedded programming, and software visualization into a unified platform.
 
-![Project Circuit Layout](docs\report\rsc\figures\tinker_cad_circuit_diagram.png)
+![Project Circuit Layout](assets\images\tinker_cad_circuit_diagram.png)
 
 ## System Architecture
 
