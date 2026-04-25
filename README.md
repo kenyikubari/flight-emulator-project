@@ -6,11 +6,14 @@ A real-time flight instrumentation system that integrates motorized analog gauge
 
 This project recreates a simplified aircraft instrument cluster using Arduino-based embedded systems, DC motor-driven gauges, LCD displays, and a Python-based dashboard. The objective is to combine mechanical systems, embedded programming, and software visualization into a unified platform.
 
+![Project Circuit Layout](docs\report\rsc\figures\tinker_cad_circuit_diagram.png)
+
 ## System Architecture
 
 The system is divided into two primary layers:
 
 ### Computer Layer
+
 - Reads flight telemetry data from a CSV file
 - Processes and distributes data through a central "Bus"
 - Sends data to:
@@ -18,6 +21,7 @@ The system is divided into two primary layers:
   - Dashboard via a temporary CSV file
 
 ### Microcontroller Layer
+
 - Two Arduino boards operating in parallel
 - Each board:
   - Controls analog gauges using DC motors
@@ -39,21 +43,23 @@ The system is divided into two primary layers:
 
 ## Hardware Components
 
-- 2× Arduino (SparkFun RedBoard / Uno)
-- 4× DC Gear Motors (DAGU DG01D 48:1)
-- 2× Motor Drivers (TB6612FNG)
-- 2× 16x2 LCD Displays
-- Potentiometers
-- Supporting wiring and power supply
+|                      |                                                        |
+| -------------------- | ------------------------------------------------------ |
+| **Hardware**         | 2× SparkFun Inventor's Kit                             |
+| **Core Theme**       | Aerospace / Flight Simulation                          |
+| **Key Deliverables** | Physical analog gauges, digital display, GUI dashboard |
+| **Primary Skills**   | Embedded systems, mechanical design, software GUI      |
 
 ## Software Stack
 
 ### Microcontroller
+
 - Rust (rust-arduino)
 - PWM-based motor control
 - Serial data parsing
 
 ### Computer
+
 - Python
 - Streamlit dashboard
 - CSV-based data pipeline
@@ -61,12 +67,12 @@ The system is divided into two primary layers:
 ## Control Strategy
 
 - Open-loop control for motor actuation
-- Homing routine at startup to establish reference positions
-- Speed ramping to produce smooth gauge motion
+- Homing at startup to establish reference positions
 
 ## Dashboard
 
 The dashboard provides:
+
 - Real-time plots of flight data
 - Numerical display of parameters
 - Continuous updates from telemetry input
@@ -76,11 +82,10 @@ Built using Streamlit and Python-based data processing tools.
 ## Testing
 
 Testing was conducted in stages:
+
 - Component-level testing of motors and displays
 - Integration testing between microcontrollers and computer
 - End-to-end validation using simulated flight data
-
-Due to embedded system constraints, testing was primarily manual and supported by custom test scripts.
 
 ## Limitations
 
