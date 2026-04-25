@@ -1,34 +1,111 @@
-flight-emulator-project
-=======================
+# Flight Emulator Instrumentation System
 
-Rust project for the _Arduino Uno_.
+A real-time flight instrumentation system that integrates motorized analog gauges, digital displays, and a live software dashboard to simulate aircraft flight parameters.
 
-## Build Instructions
-1. Install prerequisites as described in the [`avr-hal` README] (`avr-gcc`, `avr-libc`, `avrdude`, [`ravedude`]).
+## Overview
 
-2. Run `cargo build` to build the firmware.
+This project recreates a simplified aircraft instrument cluster using Arduino-based embedded systems, DC motor-driven gauges, LCD displays, and a Python-based dashboard. The objective is to combine mechanical systems, embedded programming, and software visualization into a unified platform.
 
-3. Run `cargo run` to flash the firmware to a connected board.  If `ravedude`
-   fails to detect your board, check its documentation at
-   <https://crates.io/crates/ravedude>.
+## System Architecture
 
-4. `ravedude` will open a console session after flashing where you can interact
-   with the UART console of your board.
+The system is divided into two primary layers:
 
-[`avr-hal` README]: https://github.com/Rahix/avr-hal#readme
-[`ravedude`]: https://crates.io/crates/ravedude
+### Computer Layer
+- Reads flight telemetry data from a CSV file
+- Processes and distributes data through a central "Bus"
+- Sends data to:
+  - Microcontrollers via serial communication
+  - Dashboard via a temporary CSV file
 
-## License
-Licensed under either of
+### Microcontroller Layer
+- Two Arduino boards operating in parallel
+- Each board:
+  - Controls analog gauges using DC motors
+  - Updates digital LCD displays
+- Receives real-time data from the computer via USB serial
 
- - Apache License, Version 2.0
-   ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
- - MIT license
-   ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
+## Features
 
-at your option.
+- Real-time simulation of flight parameters:
+  - Heading
+  - Yaw
+  - Roll
+  - Pitch
+- Motorized analog gauges
+- Digital LCD readouts
+- Live dashboard visualization
+- Serial communication pipeline
+- Modular system design
 
-## Contribution
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you, as defined in the Apache-2.0 license, shall
-be dual licensed as above, without any additional terms or conditions.
+## Hardware Components
+
+- 2× Arduino (SparkFun RedBoard / Uno)
+- 4× DC Gear Motors (DAGU DG01D 48:1)
+- 2× Motor Drivers (TB6612FNG)
+- 2× 16x2 LCD Displays
+- Potentiometers
+- Supporting wiring and power supply
+
+## Software Stack
+
+### Microcontroller
+- Rust (rust-arduino)
+- PWM-based motor control
+- Serial data parsing
+
+### Computer
+- Python
+- Streamlit dashboard
+- CSV-based data pipeline
+
+## Control Strategy
+
+- Open-loop control for motor actuation
+- Homing routine at startup to establish reference positions
+- Speed ramping to produce smooth gauge motion
+
+## Dashboard
+
+The dashboard provides:
+- Real-time plots of flight data
+- Numerical display of parameters
+- Continuous updates from telemetry input
+
+Built using Streamlit and Python-based data processing tools.
+
+## Testing
+
+Testing was conducted in stages:
+- Component-level testing of motors and displays
+- Integration testing between microcontrollers and computer
+- End-to-end validation using simulated flight data
+
+Due to embedded system constraints, testing was primarily manual and supported by custom test scripts.
+
+## Limitations
+
+- No position feedback from DC motors (open-loop system)
+- Analog gauge readings are qualitative rather than precise
+- Manual configuration required for serial communication
+- System is not optimized for deployment or portability
+
+## Future Improvements
+
+- Integrate position feedback using encoders or servo motors
+- Implement closed-loop control
+- Add wireless communication (e.g., Bluetooth)
+- Automate system initialization
+- Improve mechanical design of gauge system
+- Expand dashboard functionality
+
+## Demonstrations
+
+- Instrument Cluster: https://youtu.be/lIG7tXPKBvI
+- Serial Data Stream: https://youtu.be/hduWfnMPjoY
+- Dashboard: https://youtu.be/hO7zURT9W1o
+
+## Author
+
+Kenyi Kubari  
+BSc Mechanical Engineering  
+https://www.linkedin.com/in/kenyikubari/

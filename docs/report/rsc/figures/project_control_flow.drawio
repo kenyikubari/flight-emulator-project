@@ -1,0 +1,113 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="5l7EREXSIxWTyFu7awcX">
+    <mxGraphModel dx="2054" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-33" edge="1" parent="1" source="2exzAXBSm2ceCnyIC9JC-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2exzAXBSm2ceCnyIC9JC-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="500" />
+              <mxPoint x="180" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-34" edge="1" parent="1" source="2exzAXBSm2ceCnyIC9JC-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2exzAXBSm2ceCnyIC9JC-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="500" />
+              <mxPoint x="660" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-36" edge="1" parent="1" source="2exzAXBSm2ceCnyIC9JC-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2exzAXBSm2ceCnyIC9JC-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Controller 1" vertex="1">
+          <mxGeometry height="120" width="200" x="80" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-6" parent="2exzAXBSm2ceCnyIC9JC-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Reads data from serial." vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-7" parent="2exzAXBSm2ceCnyIC9JC-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Formats and processes data." vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-8" parent="2exzAXBSm2ceCnyIC9JC-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Sends data to instruments." vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-37" edge="1" parent="1" source="2exzAXBSm2ceCnyIC9JC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2exzAXBSm2ceCnyIC9JC-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Controller 2" vertex="1">
+          <mxGeometry height="120" width="200" x="560" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-41" parent="2exzAXBSm2ceCnyIC9JC-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Reads data from serial." vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-44" parent="2exzAXBSm2ceCnyIC9JC-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Formats and processes data." vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-43" parent="2exzAXBSm2ceCnyIC9JC-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Sends data to instruments." vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-21" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Instrument Cluster 1" vertex="1">
+          <mxGeometry height="90" width="200" x="80" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-22" parent="2exzAXBSm2ceCnyIC9JC-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Displays data on LCD" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-23" parent="2exzAXBSm2ceCnyIC9JC-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Moves analog gauges into position." vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-25" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Instrument Cluster 2" vertex="1">
+          <mxGeometry height="90" width="200" x="560" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-39" parent="2exzAXBSm2ceCnyIC9JC-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Displays data on LCD" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-40" parent="2exzAXBSm2ceCnyIC9JC-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Moves analog gauges into position." vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-45" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Computer Layer" vertex="1">
+          <mxGeometry height="340" width="760" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-17" parent="2exzAXBSm2ceCnyIC9JC-45" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Dashboard" vertex="1">
+          <mxGeometry height="90" width="160" x="560" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-18" parent="2exzAXBSm2ceCnyIC9JC-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Load telemetry data from temporary csv." vertex="1">
+          <mxGeometry height="30" width="160" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-19" parent="2exzAXBSm2ceCnyIC9JC-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Real-time update plots." vertex="1">
+          <mxGeometry height="30" width="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-1" parent="2exzAXBSm2ceCnyIC9JC-45" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Bus" vertex="1">
+          <mxGeometry height="120" width="200" x="280" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-2" parent="2exzAXBSm2ceCnyIC9JC-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Load telemetry data line by line." vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-3" parent="2exzAXBSm2ceCnyIC9JC-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Organises data into serial streams." vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-4" parent="2exzAXBSm2ceCnyIC9JC-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- Sends data to dashboard." vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-46" edge="1" parent="2exzAXBSm2ceCnyIC9JC-45" source="2exzAXBSm2ceCnyIC9JC-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="2exzAXBSm2ceCnyIC9JC-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-9" parent="2exzAXBSm2ceCnyIC9JC-45" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Flight Telemetry Data" vertex="1">
+          <mxGeometry height="60" width="200" x="280" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-10" parent="2exzAXBSm2ceCnyIC9JC-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- CSV containing all time stamped telemetry data." vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-38" edge="1" parent="2exzAXBSm2ceCnyIC9JC-45" source="2exzAXBSm2ceCnyIC9JC-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2exzAXBSm2ceCnyIC9JC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2exzAXBSm2ceCnyIC9JC-48" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Microcontroller Layer" vertex="1">
+          <mxGeometry height="440" width="760" x="40" y="460" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

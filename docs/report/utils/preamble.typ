@@ -1,3 +1,6 @@
+#import "@preview/codly:1.3.0": * 
+#import "@preview/codly-languages:0.1.1": *
+
 #import "@preview/red-agora:0.2.0": project
 #import "@preview/subpar:0.2.2"
 #import "@preview/physica:0.9.6": *
@@ -20,3 +23,38 @@
 )
 
 #let double-hline = table.hline(stroke: (thickness: 6pt, paint: dhpat(2pt, 0.8pt), cap: "butt"))
+#let hline = table.hline()
+
+
+// IEEE-style heading customization
+
+// Level 1: Section (e.g., I. INTRODUCTION)
+#show heading.where(level: 1): it => {
+  set align(center)
+  set text(size: 16pt, weight: "bold")
+  upper(it.body)
+}
+
+// Level 2: Subsection (e.g., A. Methodology)
+#show heading.where(level: 2): it => {
+  set text(size: 14pt, weight: "bold")
+  it.body
+}
+
+// Level 3: Subsubsection (e.g., 1) Details)
+#show heading.where(level: 3): it => {
+  set text(size: 12pt, style: "italic")
+  it.body
+}
+
+// #set par(spacing: 12pt)
+#set par(leading: 1.25em)
+#set block(spacing: 1em)
+#show: codly-init.with()
+
+#codly(
+  fill: rgb("#dbdbdb"),
+  zebra-fill: rgb("#c7c7c7"),
+  radius: 0.25em,
+)
+
